@@ -5,11 +5,11 @@ var clicks = 0;
 var targetNum = Math.floor(Math.random() * 101) + 19;
 
 
-
 function resetGame() {
     var winsCount = 0;
     var lossCount = 0;
     var score = 0;
+    clicks = 0;
     var targetNum = Math.floor(Math.random() * 101) + 19;
     $('#score').html(score);
     var blueGem = Math.floor(Math.random() * 11) + 1;
@@ -52,11 +52,9 @@ $(document).ready(function () {
 
         if (score == targetNum) {
             win();
-            resetGame();
         }
         else if (clicks > targetNum) {
             loss();
-            resetGame();
         }
     });
 
@@ -67,11 +65,9 @@ $(document).ready(function () {
 
         if (score == targetNum) {
             win();
-            resetGame();
         }
         else if (clicks > targetNum) {
             loss();
-            resetGame();
         }
     });
 
@@ -82,11 +78,9 @@ $(document).ready(function () {
 
         if (score == targetNum) {
             win();
-            resetGame();
         }
         else if (clicks > targetNum) {
             loss();
-            resetGame();
         }
     });
 
@@ -97,11 +91,9 @@ $(document).ready(function () {
 
         if (score == targetNum) {
             win();
-            resetGame();
         }
         else if (clicks > targetNum) {
             loss();
-            resetGame();
         }
     });
 });
