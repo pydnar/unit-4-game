@@ -52,9 +52,11 @@ $(document).ready(function () {
 
         if (score == targetNum) {
             win();
+            resetGame();
         }
         else if (clicks > targetNum) {
             loss();
+            resetGame();
         }
     });
 
@@ -65,9 +67,11 @@ $(document).ready(function () {
 
         if (score == targetNum) {
             win();
+            resetGame();
         }
         else if (clicks > targetNum) {
             loss();
+            resetGame();
         }
     });
 
@@ -78,9 +82,11 @@ $(document).ready(function () {
 
         if (score == targetNum) {
             win();
+            resetGame();
         }
         else if (clicks > targetNum) {
             loss();
+            resetGame();
         }
     });
 
@@ -91,9 +97,11 @@ $(document).ready(function () {
 
         if (score == targetNum) {
             win();
+            resetGame();
         }
         else if (clicks > targetNum) {
             loss();
+            resetGame();
         }
     });
 });
